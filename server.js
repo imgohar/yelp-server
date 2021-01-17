@@ -123,6 +123,6 @@ app.post("/api/v1/resturants/:id/addReview", async(req,res)=>{
     }
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT ||port, () => {
     console.log(`Server is up and running on ${port}`);
 });
